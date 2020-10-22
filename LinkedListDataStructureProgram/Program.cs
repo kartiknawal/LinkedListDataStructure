@@ -18,6 +18,12 @@ namespace LinkedListDataStructureProgram
             list2.AddBefore(30);
             list2.AddBefore(56);
             list2.Display();
+            Console.WriteLine("\n- - - - - - - - - -");
+            LinkedList list3 = new LinkedList();
+            list3.AddNode(56);
+            list3.AppendNode(30);
+            list3.AppendNode(70);
+            list3.Display();
         }
     }
 }

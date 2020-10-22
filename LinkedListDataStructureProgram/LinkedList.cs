@@ -26,6 +26,7 @@ namespace LinkedListDataStructureProgram
             Console.WriteLine("{0} inserted into the list", node.data);
         }
 
+    
         internal void Display()
         {
             if (this.head == null)
