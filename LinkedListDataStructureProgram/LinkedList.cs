@@ -82,9 +82,7 @@ namespace LinkedListDataStructureProgram
                 Console.WriteLine("List is empty");
                 return null;
             }
-            Node temp = this.head;
             head = head.next;
-            temp.next = null;
             return head;
         }
        
