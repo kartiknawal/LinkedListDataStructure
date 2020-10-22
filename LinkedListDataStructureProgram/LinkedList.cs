@@ -6,8 +6,8 @@ namespace LinkedListDataStructureProgram
 {
     class LinkedList
     {
-        internal Node head;
-        internal void AddNode(int data)
+        public Node head;
+        public void AddNode(int data)
         {
             Node node = new Node(data);
             if (head == null)
@@ -27,7 +27,7 @@ namespace LinkedListDataStructureProgram
         }
 
     
-        internal void Display()
+        public void Display()
         {
             if (this.head == null)
             {
@@ -45,7 +45,7 @@ namespace LinkedListDataStructureProgram
             }
         }
 
-        internal void AddBefore(int data)
+        public void AddBefore(int data)
         {
             Node node = new Node(data);
             if (this.head == null)
@@ -75,5 +75,19 @@ namespace LinkedListDataStructureProgram
                 temp.next = node;
             }
         }
+        public Node DeleteFirstElement()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("List is empty");
+                return null;
+            }
+            Node temp = this.head;
+            head = head.next;
+            temp.next = null;
+            return head;
+        }
+       
+
     }
 }

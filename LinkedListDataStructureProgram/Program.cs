@@ -24,6 +24,14 @@ namespace LinkedListDataStructureProgram
             list3.AppendNode(30);
             list3.AppendNode(70);
             list3.Display();
+            Console.WriteLine("\n- - - - - - - - - -");
+            LinkedList list5 = new LinkedList();
+            list5.AddNode(56);
+            list5.AddNode(30);
+            list5.AddNode(70);
+            list5.DeleteFirstElement();
+            list5.Display();
+
         }
     }
 }
