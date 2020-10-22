@@ -105,5 +105,22 @@ namespace LinkedListDataStructureProgram
             return temp;
         }
 
+        public void InsertInBetween(int data, int position)
+        {
+            Node node = new Node(data);
+            if (this.head == null)
+            {
+                Console.WriteLine("Empty List");
+                return;
+            }
+            Node temp = head;
+            for (int i = 1; i < position - 1; i++)
+            {
+                temp = temp.next;
+            }
+            node.next = temp.next;
+            temp.next = node;
+
+        }
     }
 }
