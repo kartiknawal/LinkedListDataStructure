@@ -85,7 +85,25 @@ namespace LinkedListDataStructureProgram
             head = head.next;
             return head;
         }
-       
+        public Node DeleteLastElement()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("Empty list");
+                return null;
+            }
+
+            Node temp = this.head;
+
+            while (temp.next.next != null)
+            {
+                temp = temp.next;
+            }
+
+            temp.next = null;
+            
+            return temp;
+        }
 
     }
 }
