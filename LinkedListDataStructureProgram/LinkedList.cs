@@ -23,7 +23,7 @@ namespace LinkedListDataStructureProgram
                 }
                 temp.next = node;
             }
-            Console.WriteLine("{0} inserted into the linked list", node.data);
+            Console.WriteLine("{0} inserted into the list", node.data);
         }
 
         internal void Display()
@@ -41,6 +41,37 @@ namespace LinkedListDataStructureProgram
                     Console.Write(temp.data + " ");
                     temp = temp.next;
                 }
+            }
+        }
+
+        internal void AddBefore(int data)
+        {
+            Node node = new Node(data);
+            if (this.head == null)
+            {
+                node.next = null;
+            }
+            else
+            {
+                node.next = head;
+            }
+            head = node;
+        }
+        public void AppendNode(int data)
+        {
+            Node node = new Node(data);
+            if (head == null)
+            {
+                this.head = node;
+            }
+            else
+            {
+                Node temp = head;
+                while (temp.next != null)
+                {
+                    temp = temp.next;
+                }
+                temp.next = node;
             }
         }
     }

@@ -7,11 +7,17 @@ namespace LinkedListDataStructureProgram
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Linked List Data Structure Program!");
-            LinkedList list = new LinkedList();
-            list.AddNode(56);
-            list.AddNode(30);
-            list.AddNode(70);
-            list.Display();
+            LinkedList list1 = new LinkedList();
+            list1.AddNode(56);
+            list1.AddNode(30);
+            list1.AddNode(70);
+            list1.Display();
+            Console.WriteLine("\n- - - - - - - - - -");
+            LinkedList list2 = new LinkedList();
+            list2.AddNode(70);
+            list2.AddBefore(30);
+            list2.AddBefore(56);
+            list2.Display();
         }
     }
 }
