@@ -46,6 +46,10 @@ namespace LinkedListDataStructureProgram
             list7.SearchNode(30);
             list7.Display();
 
+            list7.InsertAfterNode(40, 30);
+            Console.WriteLine("\n");
+            list7.Display();
+
         }
     }
 }
