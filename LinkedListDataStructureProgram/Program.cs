@@ -54,6 +54,16 @@ namespace LinkedListDataStructureProgram
             list7.Size();
             list7.Display();
 
+            Console.WriteLine("\n- - - - - - - - - -");
+            LinkedList list8 = new LinkedList();
+            list8.SortingWhileAdd(56);
+            list8.SortingWhileAdd(30);
+            list8.SortingWhileAdd(40);
+            list8.SortingWhileAdd(70);
+            list8.SortingWhileAdd(64);
+            list8.SortingWhileAdd(20);
+            list8.SortingWhileAdd(109);
+            list8.Display();
 
         }
     }
