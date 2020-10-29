@@ -50,6 +50,11 @@ namespace LinkedListDataStructureProgram
             Console.WriteLine("\n");
             list7.Display();
 
+            list7.DeleteNodeOfKey(40);
+            list7.Size();
+            list7.Display();
+
+
         }
     }
 }
