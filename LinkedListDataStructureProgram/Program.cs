@@ -38,6 +38,13 @@ namespace LinkedListDataStructureProgram
             list6.AddNode(70);
             list6.DeleteLastElement();
             list6.Display();
+            Console.WriteLine("\n- - - - - - - - - -");
+            LinkedList list7 = new LinkedList();
+            list7.AddNode(56);
+            list7.AddNode(30);
+            list7.AddNode(70);
+            list7.SearchNode(30);
+            list7.Display();
 
         }
     }

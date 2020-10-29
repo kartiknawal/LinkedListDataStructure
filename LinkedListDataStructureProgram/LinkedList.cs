@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LinkedListDataStructureProgram
 {
-    class LinkedList
+    public class LinkedList
     {
         public Node head;
         public void AddNode(int data)
@@ -103,6 +103,22 @@ namespace LinkedListDataStructureProgram
             temp.next = null;
             
             return temp;
+        }
+        public Node SearchNode(int data)
+        {
+
+            Node foundNode = new Node(data);
+            Node temp = head;
+            while (temp.next != null)
+            {
+                if (foundNode.data == temp.data)
+                {
+                    Console.WriteLine("Node with value {0} found", foundNode.data);
+                    return temp;
+                }
+                temp = temp.next;
+            }
+            return null;
         }
 
     }
